@@ -1,0 +1,211 @@
+body{
+    background-image: url(./images/coin_img.jpg);
+    background-size:cover;
+    font-family: "Montserrat", sans-serif;
+}
+.home{
+    background-image: url(./images/CURRENCYconvertor-img.png);
+    background-size:cover;
+}
+.start-div{
+    display:flex;
+    flex-direction: column;
+    height:20%;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    padding-top:30px;
+}
+.start-div>h1{
+  font-size:45px;
+  background-color: black;
+  color: aliceblue;
+  padding:3px;
+  border-radius: 10px;
+}
+a{
+  justify-content: center;
+}
+.start{
+    height:5vh;
+    width:30vh;
+    font-size: 30px;
+    color: wheat;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    outline: 2px solid wheat;
+    border-radius: 50px;
+}
+a{
+    display:flex;
+    width:30%;
+    text-decoration: none;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content:center;
+    align-items: center;
+}
+
+.form-div{
+    padding:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 300px;
+    height:80%;
+    background-color: rgba(255, 235, 190, 0.2) ;
+    border-radius: 50px;
+    box-shadow: rgb(54, 53, 47) 0px 20px 30px -10px;
+    backdrop-filter: blur(6px);
+}
+
+.btn{
+    display:flex;
+    justify-content: center;
+    width:60%;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border:none;
+    border-radius: 50px;
+    outline:none;
+    margin: 5% auto;
+    transition:outline 0.4s linear;
+    transition:box-shadow 0.2s linear;
+}
+.btn:hover{
+    outline:2px solid wheat;
+    box-shadow: rgb(253, 228, 67) 0px 20px 30px -10px;
+    /* 253, 228, 67 */
+}
+.btni{
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    transition:letter-spacing 0.2s ease;
+}
+.btni:hover{
+    letter-spacing: 3px;
+}
+input{
+    height:40px;
+    width:300px;
+    font-size: 20px;
+    background: transparent;
+    border:2px solid white;
+    color:white;
+    border-radius:50px;
+    outline:none;
+}
+
+input::placeholder{
+    color: azure;
+    opacity:60%;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.result{
+    font-size: 20px;
+    background: transparent;
+    color:white;
+    border-radius:50px;
+    outline:none;
+}
+footer{
+    color:black;
+    opacity:30%;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 100px;
+}
+
+/* tools */
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 0 0 2px black;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill:black;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color:black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: whitesmoke;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(255, 255, 47);
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
