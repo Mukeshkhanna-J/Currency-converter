@@ -89,6 +89,9 @@ a{
 .btni:hover{
     letter-spacing: 3px;
 }
+.amount-input,.from-c-input,.to-c-input{
+  padding-left: 1rem;
+}
 input{
     height:40px;
     width:300px;

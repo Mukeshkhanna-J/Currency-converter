@@ -15,7 +15,7 @@
     <div class="form-div">
       <div class="input-group">
         <form action="/convert" method="post">
-          <input list="currency" name="from-c" placeholder="From Currency">
+          <input class="from-c-input" list="currency" name="from-c" placeholder="From Currency">
           <datalist id="currency">
             <option value="AED">AED</option>
             <option value="AFN">AFN</option>
@@ -181,7 +181,7 @@
           </datalist>
         </div>
         <div class="input-group">
-          <input list="currency" name="to-c" placeholder="To Currency">
+          <input class="to-c-input" list="currency" name="to-c" placeholder="To Currency">
           <datalist id="currency">
             <option value="AED">AED</option>
             <option value="AFN">AFN</option>
@@ -348,7 +348,7 @@
         </div>
         <div class="input-group">
           <label for="amount"></label>
-          <input type="text" name="amount" required placeholder="Amount">
+          <input class="amount-input" type="text" name="amount" required placeholder="Amount">
         </div>
         <div class="btn">
             <input class="btni" type="submit" value="Convert" >
